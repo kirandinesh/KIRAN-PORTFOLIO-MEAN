@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #111827;
+  --color-main: #5c2ed6;
+  --color-accent: #39ff14;
+  --color-textGrey: #d1d5db;
+  --color-textWhite: #f3f4f6;
+  --color-sec: #d1d5db;
+  --drop-shadow-textGlow: 0 0 10px #63e;
+  --animate-loop: loop-scroll 30s linear infinite;
+  --animate-shine: shine 3s infinite linear;
+  --animate-appear: appear 1s linear;
+  --font-heading: "Poppins";
+  --font-subHeading: "Inter";
+  --font-texts: "Nunito";
+
+  @keyframes loop-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translate(-100%);
+    }
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+}
+
+@layer components {
+  .group:hover .animate-loop {
+    animation-play-state: paused !important;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: #101828;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.connect {
+  text-decoration: none;
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #4e4c4c 0, #fff 10%, #868686 20%);
+  background-size: 180px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+}

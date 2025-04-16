@@ -1,0 +1,91 @@
+<section
+  id="home"
+  class="h-screen overflow-hidden p-10 flex flex-col justify-center items-center [background:radial-gradient(125%_130%_at_50%_10%,#000_40%,#63e_100%)] text-white"
+>
+  <div
+    class="flex flex-col justify-between h-full w-full items-center md:flex-col md:mt-12 relative"
+  >
+    <div class="hidden md:flex justify-center items-start h-full w-full">
+      <div class="flex justify-center">
+        <h1
+          class="text-[#251552c7] text-8xl font-extrabold z-10 xl:text-[9rem] lg:text-9xl font-heading"
+        >
+          Welcome
+        </h1>
+        <div
+          class="absolute w-full h-full top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+        >
+          <app-animated-svg></app-animated-svg>
+        </div>
+        <div class="hidden xl:block absolute top-0 left-0">
+          <app-animated-svg></app-animated-svg>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="h-full z-10 flex flex-col items-center justify-center w-full md:h-full md:w-full md:justify-start"
+    >
+      <!-- box1 -->
+      <div class="grow flex justify-center flex-col md:hidden">
+        <div class="flex justify-center">
+          <h1
+            class="text-5xl sm:text-6xl md:text-[#2c2835] font-heading md:text-7xl font-extrabold"
+          >
+            Welcome
+          </h1>
+        </div>
+        <div class="w-56 sm:scale-[110%]">
+          <app-svg></app-svg>
+        </div>
+      </div>
+
+      <!-- box2 -->
+
+      <div class="w-full items-center flex flex-col justify-start mb-10">
+        <div>
+          <h3
+            class="text-3xl sm:text-4xl md:text-6xl md:text-[#B0B0B0] font-extrabold font-heading"
+          >
+            I am
+            <span class="drop-shadow-textGlow">
+              {{ details.name | titlecase }}
+            </span>
+          </h3>
+        </div>
+        <div class="flex w-full h-20 gap-2 items-center justify-center">
+          <ngx-typed-js
+            [strings]="[
+              'Full Stack Developer',
+              'Web Developer',
+              'Software Developer'
+            ]"
+            [shuffle]="true"
+            [typeSpeed]="40"
+            [showCursor]="false"
+            [backSpeed]="60"
+            [startDelay]="1000"
+            [loop]="true"
+          >
+            <span
+              class="typing text-3xl font-bold sm:text-4xl font-subHeading md:text-5xl drop-shadow-textGlow"
+            ></span>
+          </ngx-typed-js>
+        </div>
+        <div class="flex justify-between items-center gap-1">
+          <a [routerLink]="['/contact']">
+            <span
+              class="connect text-sec/30 text-xl md:text-4xl font-texts font-bold animate-shine"
+            >
+              Let's Connect
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scrollBox w-full overflow-hidden">
+    <app-infinit-scroll></app-infinit-scroll>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<div class="w-full overflow-hidden flex mb-1 space-x-16 group">
+  <ul class="flex animate-loop space-x-16">
+    <li
+      *ngFor="let skills of skillsLists"
+      class="flex w-full grow space-x-2 justify-center items-center text-[1.1rem]"
+    >
+      <i [class]="skills.iconClass" style="font-size: 1.5rem"></i>
+      <span class="grow ">{{ skills.skillName }}</span>
+    </li>
+  </ul>
+  <ul class="flex space-x-16 animate-loop" aria-hidden="true">
+    <li
+      *ngFor="let skills of skillsLists"
+      class="flex w-full grow space-x-2 justify-center items-center text-[1.1rem]"
+    >
+      <i [class]="skills.iconClass" style="font-size: 1.5rem"></i>
+      <span class="grow ">{{ skills.skillName }}</span>
+    </li>
+  </ul>
+</div>

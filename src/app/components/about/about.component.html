@@ -1,0 +1,54 @@
+<section
+  id="about"
+  class="pt-20 pb-10 px-10 bg-gray-800 text-white min-h-screen bg-[radial-gradient(125%_130%_at_50%_10%,#63e_0%,#000_60%)] overflow-hidden"
+>
+  <div>
+    <h2 class="text-4xl font-bold font-heading sm:text-5xl">About Me</h2>
+  </div>
+
+  <!-- main content -->
+  <div class="grid gap-8 py-5 lg:grid-cols-2 lg:justify-center lg:h-full">
+    <div
+      class="border-1 border-white rounded-[1.5em] bg-[radial-gradient(125%_130%_at_50%_10%,#63e_0%,#000_60%)] text-white font-nunito px-[1rem] py-3 flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px]"
+    >
+      <div class="flex flex-col justify-center items-center py-3">
+        <h1
+          class="text-[2em] font-medium mb-5 font-heading text-center sm:text-4xl xl:text-6xl"
+        >
+          Who I Am
+        </h1>
+        <p
+          class="text-base text-left font-texts sm:text-lg xl:px-10 xl:text-2xl"
+        >
+          {{ profile.bio }}
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="border-1 border-white rounded-[1.5em] bg-[radial-gradient(125%_130%_at_50%_10%,#63e_0%,#000_60%)] text-white font-nunito px-[1rem] py-3 flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px]"
+    >
+      <div class="flex flex-col justify-center items-center py-10">
+        <h1
+          class="text-[2em] font-medium font-heading mb-5 sm:text-4xl xl:text-6xl"
+        >
+          What I Do
+        </h1>
+        <div
+          *ngFor="let aboutList of aboutLists"
+          class="flex flex-col gap-3 xl:px-10"
+        >
+          <div class="border-b border-t flex justify-center items-center p-1">
+            <span
+              class="connect font-subHeading animate-shine text-base sm:text-2xl xl:text-4xl"
+              >{{ aboutList.title }}</span
+            >
+          </div>
+          <div class="mb-5 sm:text-lg xl:text-2xl">
+            <p class="font-texts">{{ aboutList.content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

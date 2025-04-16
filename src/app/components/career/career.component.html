@@ -1,0 +1,71 @@
+<section
+  id="education"
+  class="pt-20 pb-10 min-h-screen h-full px-10 bg-gray-800 text-white bg-[radial-gradient(125%_130%_at_50%_10%,#000_40%,#63e_100%)] overflow-hidden"
+>
+  <div>
+    <h2 class="text-4xl font-bold font-heading sm:text-5xl tracking-wider">
+      Career
+    </h2>
+  </div>
+  <div
+    class="grid xl:pt-20 xl:pb-28 lg:pt-10 lg:pb-28 grid-cols-1 justify-center w-full lg:grid-cols-2 gap-5 lg:gap-5 overflow-auto"
+  >
+    <div
+      class="flex items-center h-full justify-center w-full flex-col gap-3 my-8 py-6 pl-12 pr-4 xl:pt-10 isolate [unicode-bidi:isolate] rounded-xl relative before:content-[''] before:absolute before:w-1 before:h-4/5 before:bg-[#373c3d] before:z-[10] before:left-6 bg-main/30 bg-clip-padding backdrop-filter backdrop-blur-sm backdrop-saturate-100 backdrop-contrast-125"
+    >
+      <div
+        *ngFor="let education of educations"
+        class="flex flex-col border-b pb-5 w-full md:gap-1 lg:py-3"
+      >
+        <h2
+          class="font-bold text-base text-gray-200 font-heading sm:text-lg md:text-xl lg:text-xl xl:text-[1.4rem]"
+        >
+          {{ education.degree }}
+        </h2>
+        <h3
+          class="font-semibold text-textGrey tracking-wide font-subHeading text-[0.8rem] sm:text-[0.9rem] md:text-[1.1rem] lg:text-[1rem] xl:text-[1.1rem]"
+        >
+          {{ education.institution }}
+        </h3>
+        <span
+          class="text-gray-500 font-texts font-bold sm:text-lg md:text-xl xl:text-2xl"
+          >{{ education.duration }}</span
+        >
+      </div>
+    </div>
+
+    <!-- //experience -->
+
+    <div
+      class="flex items-center w-full h-full justify-center flex-col gap-3 my-8 py-6 pl-12 pr-4 xl:pt-10 lg:px-15 lg:pt-8 isolate [unicode-bidi:isolate] rounded-xl relative before:content-[''] before:absolute before:w-1 before:h-4/5 before:bg-[#373c3d] before:z-[10] before:left-6 bg-main/30 bg-clip-padding backdrop-filter backdrop-blur-sm backdrop-saturate-100 backdrop-contrast-125"
+    >
+      <div *ngFor="let experience of experiences" class="flex w-full flex-col">
+        <h2
+          class="font-bold tracking-wider text-gray-200 text-xl font-heading sm:text-2xl md:text-3xl lg:text-2xl"
+        >
+          {{ experience.title }}
+        </h2>
+        <h3
+          class="font-semibold text-textGrey tracking-wide font-subHeading sm:text-lg md:text-xl"
+        >
+          {{ experience.company }}
+        </h3>
+        <span
+          class="text-gray-300 font-texts font-semibold text-[1.1rem] md:text-[1.3rem]"
+          >{{ experience.location }}</span
+        >
+        <span class="text-gray-400 italic sm:text-lg md:text-xl font-bold">{{
+          experience.duration
+        }}</span>
+        <ul class="flex flex-col space-y-4 my-3">
+          <li
+            *ngFor="let points of experience.responsibilities"
+            class="sm:text-lg md:text-xl rounded-md font-medium font-texts ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 px-4 py-2 group ransition-all duration-200 ease-in-out ring-2 ring-offset-2 ring-gray-900 bg-black/30 bg-clip-padding backdrop-filter backdrop-blur-sm backdrop-saturate-100 backdrop-contrast-125"
+          >
+            {{ points }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

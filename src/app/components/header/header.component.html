@@ -1,0 +1,66 @@
+<nav
+  class="p-5 justify-center -translate-x-1/2 left-1/2 fixed hidden sm:flex z-[1000]"
+>
+  <ul
+    class="flex gap-5 p-3 relative bg-black/50 bg-clip-padding backdrop-filter backdrop-blur-sm backdrop-saturate-100 backdrop-contrast-125 rounded-2xl"
+  >
+    <li
+      *ngFor="let navItem of navItems; let i = index"
+      class="font-bold text-white rounded relative"
+    >
+      <a
+        class="tracking-widest"
+        [ngClass]="
+          activeNav === i
+            ? 'before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-1 before:w-8 before:h-8 before:bg-[#63e]/70 before:rounded-full before:transition-all before:duration-300'
+            : 'text-pink-500 font-bold'
+        "
+        (click)="handleActiveNav(i)"
+        [routerLink]="[navItem.title]"
+      >
+        {{ navItem.label }}
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="sm:hidden z-50">
+  <mat-icon
+    class="fixed top-3 left-1/2 -translate-x-1/2 z-[1000]"
+    style="color: #d1d5db"
+    aria-hidden="false"
+    aria-label="Menu icon"
+    (click)="handleToggle()"
+  >
+    {{ isMenuOpen ? "close" : "menu" }}
+  </mat-icon>
+
+  <div
+    [ngClass]="
+      isMenuOpen ? 'left-[5%] duration-500' : 'left-[-100%] duration-500'
+    "
+    class="fixed flex w-full top-10 z-[1000]"
+  >
+    <ul
+      class="flex flex-col gap-4 p-5 relative bg-black/40 bg-clip-padding backdrop-filter backdrop-blur-sm backdrop-saturate-100 backdrop-contrast-125 rounded-2xl"
+    >
+      <li
+        *ngFor="let navItem of navItems; let i = index"
+        class="font-bold text-white rounded relative text-xs"
+      >
+        <a
+          class="tracking-widest"
+          [ngClass]="
+            activeNav === i
+              ? 'before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-1 before:w-6 before:h-6 before:bg-[#63e]/70 before:rounded-full before:transition-all before:duration-300'
+              : 'text-pink-500 font-bold'
+          "
+          (click)="handleActiveNav(i)"
+          [routerLink]="['/' + navItem.title]"
+        >
+          {{ navItem.label }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
