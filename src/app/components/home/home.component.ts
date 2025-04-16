@@ -19,8 +19,6 @@ import { RouterLink } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   details: { name: string } = { name: 'kiran dinesh' };
-
-  ngOnInit(): void {}
 }

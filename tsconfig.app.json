@@ -2,17 +2,6 @@
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "extends": "./tsconfig.json",
-  "content": [
-    "./src/**/*.{html,ts}",
-    "./projects/**/*.{html,ts}" // if using Angular workspace
-  ],
-  "safelist": [
-    "space-x-16",
-    "space-x-2",
-    "text-xl",
-    "min-w-max",
-    "flex-shrink-0"
-  ],
   "compilerOptions": {
     "outDir": "./out-tsc/app",
     "types": []
