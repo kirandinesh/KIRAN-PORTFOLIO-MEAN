@@ -6,6 +6,14 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-5xs: 36rem;
+  --breakpoint-4xs: 32rem;
+  --breakpoint-3xs: 28rem;
+  --breakpoint-2xs: 24rem;
+  --breakpoint-xs: 20rem;
+  --breakpoint-2md: 56rem;
+  --breakpoint-2lg: 72rem;
+
   --color-primary: #111827;
   --color-main: #5c2ed6;
   --color-accent: #39ff14;
