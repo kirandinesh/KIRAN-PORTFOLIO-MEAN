@@ -186,8 +186,22 @@ export const projects: Projects[] = [
     liveDemo: 'https://mern-e-commerce-website-1-v5bp.onrender.com',
   },
   {
-    title: 'Personal Portfolio Website',
-    techStack: ['React.js', 'Tailwind CSS'],
+    title: 'Personal Portfolio Website (Angular)',
+    techStack: ['Angular', 'Tailwind CSS', 'TypeScript', 'HTML5', 'CSS'],
+    description:
+      'A clean and modern portfolio website built using Angular to showcase my projects, skills, and contact details.',
+    features: [
+      'Modular architecture with reusable components.',
+      'Responsive design with Tailwind CSS.',
+      'Angular routing for smooth navigation.',
+      'Dynamic project section powered by TypeScript.',
+    ],
+    github: '#',
+    liveDemo: 'https://portfolio-kiran1.netlify.app',
+  },
+  {
+    title: 'Personal Portfolio Website (React)',
+    techStack: ['React.js', 'Tailwind CSS', 'Shdcn UI'],
     description:
       'A fully responsive personal portfolio to showcase projects, skills, and experience.',
     features: [
