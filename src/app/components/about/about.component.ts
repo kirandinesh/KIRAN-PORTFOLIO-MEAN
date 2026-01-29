@@ -13,6 +13,6 @@ import { AbouData } from '../../interfaces/main';
 export class AboutComponent {
   aboutLists: AbouData[] = aboutData;
   profile = {
-    bio: 'I am a B.Tech in Computer Science and Engineering graduate with expertise in full-stack development. My journey in web development began with a deep curiosity for problem-solving and building intuitive digital experiences',
+    bio: 'I’m a Full-Stack Developer with experience in Angular, React, Node.js, and MongoDB. I enjoy building scalable web applications, solving real-world problems, and creating clean, user-friendly interfaces.',
   };
 }

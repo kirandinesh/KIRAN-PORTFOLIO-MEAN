@@ -5,9 +5,13 @@ export interface NavBarList {
 
 export interface SkillData {
   skillName: string;
-  degree: number;
   skillColor: string;
   iconClass: string;
+}
+
+export interface SkillCategories {
+  categoryName: string;
+  skills: SkillData[];
 }
 
 export interface AbouData {

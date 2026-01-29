@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { skillsData } from '../../config';
-import { SkillData } from '../../interfaces/main';
+import { skillCategories } from '../../config';
+import { SkillCategories } from '../../interfaces/main';
 
 @Component({
   selector: 'app-skills',
@@ -11,5 +11,5 @@ import { SkillData } from '../../interfaces/main';
   styleUrl: './skills.component.css',
 })
 export class SkillsComponent {
-  skills: SkillData[] = skillsData;
+  skills: SkillCategories[] = skillCategories;
 }

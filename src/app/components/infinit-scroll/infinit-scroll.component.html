@@ -2,7 +2,7 @@
   <ul class="flex animate-loop space-x-16">
     <li
       *ngFor="let skills of skillsLists"
-      class="flex items-center justify-center text-[1.1rem] px-4 min-w-max"
+      class="flex gap-2 items-center justify-center text-[1.1rem] px-4 min-w-max"
     >
       <i [class]="skills.iconClass" style="font-size: 1.5rem"></i>
       <span class="grow">{{ skills.skillName }}</span>
@@ -11,7 +11,7 @@
   <ul class="flex space-x-16 animate-loop" aria-hidden="true">
     <li
       *ngFor="let skills of skillsLists"
-      class="flex items-center justify-center text-[1.1rem] px-4 min-w-max"
+      class="flex gap-2 items-center justify-center text-[1.1rem] px-4 min-w-max"
     >
       <i [class]="skills.iconClass" style="font-size: 1.5rem"></i>
       <span class="grow">{{ skills.skillName }}</span>

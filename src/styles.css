@@ -20,10 +20,14 @@
   --color-textGrey: #d1d5db;
   --color-textWhite: #f3f4f6;
   --color-sec: #d1d5db;
+
   --drop-shadow-textGlow: 0 0 10px #63e;
+
   --animate-loop: loop-scroll 30s linear infinite;
+  --animate-underline: underline 2s ease-in-out infinite;
   --animate-shine: shine 3s infinite linear;
   --animate-appear: appear 1s linear;
+
   --font-heading: "Poppins";
   --font-subHeading: "Inter";
   --font-texts: "Nunito";
@@ -34,6 +38,18 @@
     }
     to {
       transform: translate(-100%);
+    }
+  }
+
+  @keyframes underline {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
     }
   }
 

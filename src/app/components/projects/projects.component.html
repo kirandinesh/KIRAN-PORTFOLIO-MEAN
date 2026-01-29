@@ -12,7 +12,7 @@
   >
     <div
       *ngFor="let project of projects; let i = index"
-      class="service-card w-full justify-between rounded-2xl shadow-xl h-full sm:p-12 md:p-5 lg:p-10 cursor-pointer snap-start shrink-0 py-8 px-6 flex flex-col items-start gap-3 transition-all duration-300 group bg-main/30 bg-clip-padding backdrop-filter backdrop-blur-sm backdrop-saturate-100 backdrop-contrast-125"
+      class="service-card w-full justify-between rounded-2xl shadow-xl h-fit sm:p-12 md:p-5 lg:p-10 cursor-pointer snap-start shrink-0 py-8 px-6 flex flex-col items-start gap-3 transition-all duration-300 group bg-main/30 bg-clip-padding backdrop-filter backdrop-blur-sm backdrop-saturate-100 backdrop-contrast-125"
     >
       <svg
         stroke-linejoin="round"
@@ -28,6 +28,10 @@
         <line y2="21" x2="16" y1="21" x1="8"></line>
         <line y2="21" x2="12" y1="17" x1="12"></line>
       </svg>
+
+      <!-- <div class="bg-red-500 w-full min-w-60 h-52">
+        <img src="../../../assets/icons/close.png" alt="" />
+      </div> -->
 
       <p
         class="font-bold text-xl text-white sm:text-3xl md:text-xl lg:text-[1.4rem] xl:text-[1.7rem] 2xl:text-3xl"

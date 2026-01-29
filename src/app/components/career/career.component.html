@@ -39,7 +39,10 @@
     <div
       class="flex items-center w-full h-full justify-center flex-col gap-3 my-8 py-6 pl-12 pr-4 xl:pt-10 lg:px-15 lg:pt-8 isolate [unicode-bidi:isolate] rounded-xl relative before:content-[''] before:absolute before:w-1 before:h-4/5 before:bg-[#373c3d] before:z-[10] before:left-6 bg-main/30 bg-clip-padding backdrop-filter backdrop-blur-sm backdrop-saturate-100 backdrop-contrast-125"
     >
-      <div *ngFor="let experience of experiences" class="flex w-full flex-col">
+      <div
+        *ngFor="let experience of experiences"
+        class="flex border-b-gray-500 border-b-2 py-2 w-full flex-col"
+      >
         <h2
           class="font-bold tracking-wider text-gray-200 text-xl font-heading sm:text-2xl md:text-3xl lg:text-2xl"
         >
@@ -57,7 +60,7 @@
         <span class="text-gray-400 italic sm:text-lg md:text-xl font-bold">{{
           experience.duration
         }}</span>
-        <ul class="flex flex-col space-y-4 my-3">
+        <ul class="flex flex-col space-y-4 gap-1 my-3">
           <li
             *ngFor="let points of experience.responsibilities"
             class="sm:text-lg md:text-xl rounded-md font-medium font-texts ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 px-4 py-2 group ransition-all duration-200 ease-in-out ring-2 ring-offset-2 ring-gray-900 bg-black/30 bg-clip-padding backdrop-filter backdrop-blur-sm backdrop-saturate-100 backdrop-contrast-125"
