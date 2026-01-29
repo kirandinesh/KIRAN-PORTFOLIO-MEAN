@@ -1,59 +1,88 @@
-# Portfolio
+# Personal Portfolio Website – Angular (MEAN)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
+🔗 **Live Demo:** https://portfolio-kiran1.netlify.app  
+🔗 **GitHub Repository:** https://github.com/kirandinesh/KIRAN-PORTFOLIO-MEAN
 
-## Development server
+This is my **personal portfolio website** built using **Angular** to showcase my
+projects, technical skills, experience, and contact information in a clean,
+modern, and responsive interface.
 
-To start a local development server, run:
+The portfolio represents my profile as a **Full Stack Developer (MEAN / MERN)**,
+with strong emphasis on UI design, animations, and performance.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🛠 Tech Stack
 
-## Code scaffolding
+### Frontend
+- Angular
+- TypeScript
+- Tailwind CSS
+- Angular Material
+- RxJS
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### UI & Animations
+- ngx-typed-js
+- Angular Animations
 
-```bash
-ng generate component component-name
-```
+### Integrations
+- EmailJS (Contact form)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Tools & Build
+- Angular CLI
+- PostCSS
+- Git & GitHub
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## ✨ Key Features
 
-To build the project run:
+- Modern, responsive single-page design
+- Smooth navigation and UI animations
+- Typed text animation for dynamic introduction
+- Project showcase with descriptions
+- Skills and tech stack sections
+- Contact form with EmailJS integration
+- Mobile-friendly and performance optimized
+- Clean, component-based Angular architecture
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📂 Sections Included
 
-## Running unit tests
+- **Home** – Introduction and role overview  
+- **About** – Background and skills summary  
+- **Projects** – Real-world and full-stack projects  
+- **Skills** – Frontend, backend, tools & technologies  
+- **Contact** – Email form for direct communication  
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 🎯 Project Purpose
 
-## Running end-to-end tests
+This portfolio was built to:
+- Present my work professionally to recruiters
+- Demonstrate Angular and TypeScript best practices
+- Highlight UI/UX and frontend architecture skills
+- Serve as a central hub for all my projects
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 🚀 Deployment
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- Hosted on **Netlify**
+- Production build using Angular CLI
+- Optimized for performance and responsiveness
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 👤 Author
+
+Developed by **Kiran Dinesh**
+
+- 📧 Email: kiran.dinesh2024@gmail.com    
+- 🔗 LinkedIn: https://www.linkedin.com/in/kirandinesh  
+
+---
+
+> *Crafting clean, scalable, and user-focused web applications.*
